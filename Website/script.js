@@ -48,60 +48,28 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
 // Page 4 image automatic scroll horizontal
-function duplicateLookbookIfWide() {
-  const lookbook = document.querySelector('.lookbook');
-  if (window.innerWidth > 431 && !lookbook.classList.contains('duplicated')) {
-    lookbook.innerHTML += lookbook.innerHTML;
-    lookbook.classList.add('duplicated');
-  }
+document.addEventListener("DOMContentLoaded", () => {
+  const lookbook = document.querySelector(".lookbook");
+  const dots = document.querySelectorAll(".dot");
+
+  // Only duplicate on wide screens
+if (window.innerWidth > 767 && !lookbook.classList.contains("duplicated")) {
+  const items = lookbook.querySelectorAll('.collection');
+  items.forEach(item => {
+    const clone = item.cloneNode(true);
+    lookbook.appendChild(clone);
+  });
+  lookbook.classList.add("duplicated");
 }
 
-document.addEventListener("DOMContentLoaded", duplicateLookbookIfWide);
-window.addEventListener("resize", duplicateLookbookIfWide);
-  
-// Page 4 image automatic scroll horizontal
-// document.addEventListener("DOMContentLoaded", () => {
-//     const lookbook = document.querySelector('.lookbook');
-//     lookbook.innerHTML += lookbook.innerHTML; // duplicate content
-//   });
 
+  // Clean scroll and pagination logic for all screens
+  lookbook.scrollLeft = 0;
 
-
-// // page 4 gallery img scroll vertical
-// document.addEventListener("DOMContentLoaded", () => {
-//   let targetOffset = 0;
-//   let currentOffset = 0;
-//   let direction = -1;
-
-//   window.addEventListener("scroll", () => {
-//     const scrollY = window.scrollY;
-//     direction = scrollY > targetOffset ? -1 : 1;
-//     targetOffset = scrollY;
-//   });
-
-//   function animateMedia() {
-//     currentOffset += (targetOffset - currentOffset) * 0.05;
-
-//     document.querySelectorAll('.collection img, .collection video').forEach((media, index) => {
-//       const offset = (currentOffset * 0.015 + index * 5) * direction;
-//       media.style.transform = `translateY(${offset}px)`;
-//     });
-
-//     requestAnimationFrame(animateMedia);
-//   }
-
-//   animateMedia();
-// });
-
-
-
-
-
-// For page 5 form phoneumber country locator
-// document.addEventListener("DOMContentLoaded", function () {
-//   const input = document.querySelector("#phone");
-//   window.intlTelInput(input, {
-//     initialCountry: "ng",
-//     utilsScript: "Website\utils.js"
-//   });
-// });
+  lookbook.addEventListener("scroll", () => {
+    const index = Math.round(lookbook.scrollLeft / lookbook.offsetWidth);
+    dots.forEach((dot, i) => {
+      dot.classList.toggle("active", i === index);
+    });
+  });
+});
