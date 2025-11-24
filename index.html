@@ -16,7 +16,7 @@
              <!-- Header -->
 <!-- Navigation -->
 <div class="navigation">
-    <div class="navbar">
+    <div class="navbar" id="navbar">
         <nav class="navbar-container">
             <div class="logo">
                 <img src="IMG/Page 1/logss.png" alt="Brand Logo" width="150" height="65">
@@ -46,13 +46,13 @@
             <!-- Sidebar Navigation -->
     <div class="nav-2">
         <ul class="nav-links-2">
-            <li class="hdr"><a href="" >Home</a></li><hr>  
-            <li><a href="">About</a><hr></li>
-            <li><a href="">Our Services</a><hr></li>
-            <li><a href="">What We Do</a><hr></li>
-            <li><a href="">Why Dee Saint Concept</a><hr></li>
-            <li><a href="">Gallery</a></li><hr>
-            <li><a href="">Contact </a></li><hr>
+            <li class="hdr"><a href="#navbar" >Home</a></li><hr>  
+            <li><a href="#about">About</a><hr></li>
+            <li><a href="#our-services">Our Services</a><hr></li>
+            <li><a href="#ourservices">What We Do</a><hr></li>
+            <li><a href="#about">Why Dee Saint Concept</a><hr></li>
+            <li><a href="#gallery">Gallery</a></li><hr>
+            <li><a href="#contact">Contact </a></li><hr>
             <li><a href=""></a></li>
         </ul>
     </div>
@@ -125,7 +125,7 @@
     </div>
 </div>
 <!-- Page 2 -->
-<div class="about">
+<div class="about" id="about">
     <div class="about-why">
         <div class="about-container">
             <div class="about-hdr">
@@ -155,7 +155,7 @@
     </div>
 </div>
 <!-- Page 3 -->
- <div class="our-services">
+ <div class="our-services" id="our-services">
     <div class="services">
         <div class="our-serve">
             <h4>Our Services</h4>
@@ -218,7 +218,7 @@
  </div>
  
  <!-- Page 4 -->
-<div class="gallery">
+<div class="gallery" id="gallery">
     <div class="gallery-view">
         <div class="gallery-container">
             <h2>Follow the magic</h2>
@@ -340,12 +340,12 @@
                         <label for="budget">Budget*</label>
                         <select id="budget" name="budget" required>
                             <option value="" disabled selected>Select your budget</option>
-                            <option value="below-25k">Below #25k</option>
-                            <option value="25k-50k">#25k - #50k</option>
-                            <option value="50k-100k">#50k - #100k</option>
-                            <option value="100k-199k">#100k - #199k</option>
-                            <option value="199k-499k">#199k - #499k</option>
-                            <option>#500k+</option>
+                            <option value="below-25k">Below #100k</option>
+                            <option value="25k-50k">#100k - #300k</option>
+                            <option value="50k-100k">#300k - #500k</option>
+                            <option value="100k-199k">#500k - #1m</option>
+                            <option value="199k-499k">#1m - #2m</option>
+                            <option>#2m+</option>
                         </select>
                     </form>
                     <form class="form2">
