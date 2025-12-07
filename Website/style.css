@@ -686,6 +686,10 @@ body {
 .nav-links {
     display: none;
 }
+.background-scroll {
+  height: calc(100vh - 350px);
+
+}
 /* side-bar navigation */
 .ham-sidebar {
     display: flex;
@@ -762,6 +766,10 @@ body {
 /* header */
 .navbar {
     margin-left: 25px; 
+}
+.background-scroll {
+  height: calc(100vh - 40px);
+
 }
 .banner-container p {
     overflow-y: scroll;
