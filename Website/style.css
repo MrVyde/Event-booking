@@ -533,14 +533,6 @@ body {
     color: white;
 }
 
-.contact-container {
-    display: flex;
-    gap: 50px;
-}
-
-.location {
-    width: 65%;
-}
 .quote {
   position: relative;
   width: 100%;
@@ -652,69 +644,6 @@ body {
 }
 
 
-.form-hdr {
-    width: 60%;
-    border-radius: 25px;
-     background-color: rgb(208, 208, 208);
-}  
-.form-hdr h2 {
-    padding:  20px 0 20px 20px;
-    font-weight: normal;
-}
-.form-container {
-    display: flex;
-    gap: 10px;
-    padding-left: 15px;
-}
-.form1 {
-    width: 47%;
-}
-.form1 input, .form1 select {
-    width: 100%;
-    box-sizing: border-box;
-    padding: 10px 0px;
-    margin: 2px 0 15px 0;
-    background-color: rgb(247, 242, 235);
-    border: none;
-    border-radius: 5px;
-} 
-.form2 {
-    width: 47%;
-}
-.form2 input, .form2 select {
-    border-radius: 5px;
-    width: 100%;
-    box-sizing: border-box;
-    padding: 10px 0px;
-    margin: 2px 0 15px 0;
-    background-color: rgb(247, 242, 235);
-    border: none;
-} 
-.form3 {
-
-    padding: 0px 20px 0 20px;
-}
-.form3 textarea {
-    width: 100%;
-    box-sizing: border-box;
-    padding: 10px 0px;
-    margin: 2px 0 15px 0;
-    background-color: rgb(247, 242, 235);
-    border: none;
-    border-radius: 5px;
-}
-.button-wrapper {
-    display: flex;
-    justify-content: center;
-    padding: 30px 0;
-}
-.button-wrapper button {
-    background-color: rgb(0, 0, 0);
-    border-radius: 20px;
-    padding: 15px 15px;
-    border: none;
-    color: white;
-}
 /* Footer */
 .footer {
     background-color: rgb(247, 242, 235);
@@ -821,25 +750,10 @@ body {
   bottom: -10px;
 }
 
-
-.form-hdr {
-    width: 100%;
-    border-radius: 25px;
-    margin-left: 0;
-}
 .c {
     display: block;
 }
-.form-container {
-    display: block;
-    padding-left: 20px;
-}
-.form1 {
- width: 97%;
-}
-.form2 {
-    width: 97%;
-}
+
 }
 
 
@@ -894,25 +808,6 @@ body {
 .location {
     width: 100%;
     margin-bottom: 20px;
-}
-
-.form-hdr {
-    width: 100%;
-    border-radius: 25px;
-    margin-left: 0;
-}
-.c {
-    display: block;
-}
-.form-container {
-    display: block;
-    padding-left: 20px;
-}
-.form1 {
- width: 97%;
-}
-.form2 {
-    width: 97%;
 }
 
 }
@@ -1060,13 +955,6 @@ body {
   bottom: -10px;
 }
 
-.form-container {
-    padding-left: 10px;
-}
-.form3 {
-    /* width: 100%; */
-    padding: 0px 10px 0 10px;
-}
 }
 
 /* Small phones */
@@ -1114,20 +1002,6 @@ body {
 .hder .tagline {
   font-size: 1.1rem;    
    
-}
-.form-container {
-    padding-left: 10px;
-}
-.form-hdr {
-    width: 100%;
-    border-radius: 25px;
-    margin-left: 1%;
-}
-.form-hdr h2 {
-    padding:  20px 0 20px 10px;
-}
-.form3 {
-    padding: 0px 10px 0 10px;
 }
 
 }
